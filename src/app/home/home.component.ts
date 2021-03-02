@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { GlobalvarService } from '../globalvar.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+  public globalvar: GlobalvarService) {
+
+   }
+
+  cek = false;
 
   judul = "";
   isi = "";
@@ -17,11 +24,14 @@ export class HomeComponent implements OnInit {
   mergetgl = "";
 
   tambahnote(){
+    this.mergetgl = this.tanggal + " " + this.bulan + " " + this.tahun;
+    this.globalvar.setnote(this.judul, this.bulan, this.mergetgl);
 
+    this.cek = true;
   }
 
   ngOnInit() {
-    
+    this.cek = false;
   }
 
 }

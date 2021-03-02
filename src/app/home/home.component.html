@@ -1,4 +1,4 @@
-<!-- <h1>Add Your Note Here</h1>
+<h1>Add Your Note Here</h1>
 
 <input type="text" placeholder="Judul Note" [(ngModel)]="judul">
 <br> <br>
@@ -13,9 +13,7 @@
 <input type="text" placeholder="tahun" [(ngModel)]="tahun">
 <br><br>
 
-<button (click)="tambahnote()">TAMBAH NOTE</button> -->
+<button (click)="tambahnote()">SAVE NOTE</button>
+<button style="margin-left: 10px;" routerLink='/detail'> DETAIL </button>
 
-
-<p>
-home works!
-</p>
+<h4 *ngIf="cek">NOTE SAVED</h4>

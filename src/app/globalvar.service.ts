@@ -20,4 +20,25 @@ export class GlobalvarService {
     this.Data = databaru;
   }
 
+  private judul:String = "";
+  private isi:String = "";
+  private tanggal:String = "";
+
+   public setnote(judul: string, isi: string, tanggal: string){
+    this.judul = judul;
+    this.isi = isi;
+    this.tanggal = tanggal;
+  }
+
+  public getjudul(){
+    return this.judul;
+  }
+  public getisi(){
+    return this.isi;
+  }
+  public gettanggal(){
+    return this.tanggal;
+  }
+
+
 }
