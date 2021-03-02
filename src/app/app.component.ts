@@ -6,17 +6,17 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  // name = 'Angular ' + VERSION.major;
 
-  judul = "";
-  isi = "";
-  tanggal = "";
-  bulan = "";
-  tahun = "";
-  mergetgl = "";
+  // judul = "";
+  // isi = "";
+  // tanggal = "";
+  // bulan = "";
+  // tahun = "";
+  // mergetgl = "";
 
-  tambahnote(){
+  // tambahnote(){
 
-  }
+  // }
 
 }
