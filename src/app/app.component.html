@@ -2,3 +2,31 @@
 <p>
   Start editing to see some magic happen :)
 </p> -->
+<!-- 
+Buatlah sebuah Project Angular baru pada StackBlitz, dan hubungkan dengan github anda. 
+Kumpulkan link githubnya pada classroom.
+
+Ketentuan Program yang dibuat antara lain :
+1. Program terdiri dari 3 halaman
+2. Halaman 1 : Halaman untuk input note (yang diinputkan judul, isi, dan tanggal note dibuat)
+    Halaman 2 : Berisi halaman detail note. (Halaman detail terdapat icon untuk membuat note tersebut menjadi favorit)
+    Halaman 3 : Berisi note yang favorit.
+3. Routing Halaman dapat disesuaikan sendiri. Contoh : Halaman 2 hanya dapa diakses dari memilih note di halaman 1, Hal 3 dapat diakses dari mana saja. 
+-->
+
+<h1>Add Your Note Here</h1>
+
+<input type="text" placeholder="Judul Note" [(ngModel)]="judul">
+<br> <br>
+
+<input type="text" placeholder="tulis isi note disini" [(ngModel)]="isi">
+<br> <br>
+
+<input type="text" placeholder="tanggal" [(ngModel)]="tanggal">
+<br>
+<input type="text" placeholder="bulan" [(ngModel)]="bulan">
+<br>
+<input type="text" placeholder="tahun" [(ngModel)]="tahun">
+<br><br>
+
+<button (click)="tambahnote()">TAMBAH NOTE</button>

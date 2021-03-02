@@ -7,4 +7,16 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+
+  judul = "";
+  isi = "";
+  tanggal = "";
+  bulan = "";
+  tahun = "";
+  mergetgl = "";
+
+  tambahnote(){
+
+  }
+
 }
