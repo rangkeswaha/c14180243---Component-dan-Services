@@ -19,7 +19,7 @@ export class DetailComponent implements OnInit {
   datadariglob: any;
   judul = "";
   isi = "";
-  mergetgl = "";
+  tanggal = "";
   datatambah: any;
   datatemp: any;
 
@@ -27,7 +27,4 @@ export class DetailComponent implements OnInit {
     let judul = this.route.snapshot.paramMap.get("nama");
   }
 
-  judul = "";
-  isi = "";
-  tanggal = "";
 }

@@ -1,7 +1,23 @@
-<p>
-	detail works!
-</p>
+<br><br>
 
-<div *ngFor="">
+<div>
+	<table>
+		<tr>
+			<th>Judul</th>
+			<th>Isi</th>
+			<th>Tanggal</th>
+		</tr>
+		<tr *ngFor="let count of datatemp; let i = index">
+			<td>{{datatemp[i].judul}}</td>
+			<td>{{datatemp[i].isi}}</td>
+			<td>{{datatemp[i].tanggal}}</td>
+		</tr>
 
+	</table>
 </div>
+
+<!-- <div *ngFor="let count of datatemp; let i = index">
+  {{datatemp[i].judul}}
+  {{datatemp[i].isi}}
+  {{datatemp[i].tanggal}}
+</div> -->
