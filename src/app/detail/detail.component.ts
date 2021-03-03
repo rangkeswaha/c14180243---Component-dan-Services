@@ -23,8 +23,9 @@ export class DetailComponent implements OnInit {
   datatambah: any;
   datatemp: any;
 
+  btnfav() {}
+
   ngOnInit() {
     let judul = this.route.snapshot.paramMap.get("nama");
   }
-
 }
