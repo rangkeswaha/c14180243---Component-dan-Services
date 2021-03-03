@@ -1,2 +1,17 @@
-<br>
-adsadad
+<br><br>
+
+<div>
+	<table>
+    <tr>
+      <th>Judul</th>
+      <th>Isi</th>
+      <th>Tanggal</th>
+    </tr>
+		<tr *ngFor="let count of datatemp; let i = index">
+        <td *ngIf="datatemp[i].favorite">{{datatemp[i].judul}}</td>
+        <td *ngIf="datatemp[i].favorite">{{datatemp[i].isi}}</td>
+        <td *ngIf="datatemp[i].favorite">{{datatemp[i].tanggal}}</td>
+		</tr>
+
+	</table>
+</div>

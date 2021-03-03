@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
       judul : this.judul,
       isi : this.isi,
       tanggal : this.mergetgl,
-      favorite : "no"
+      favorite : false
     }
     this.datatemp.push(this.datatambah);
     this.globalvar.setData(this.datatemp);

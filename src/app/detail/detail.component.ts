@@ -23,7 +23,11 @@ export class DetailComponent implements OnInit {
   datatambah: any;
   datatemp: any;
 
-  btnfav() {}
+  btnfav(i: any) {
+    this.datatemp[i].favorite = true;
+    this.globalvar.setData(this.datatemp);
+    this.datadariglob = this.globalvar.getData();
+  }
 
   ngOnInit() {
     let judul = this.route.snapshot.paramMap.get("nama");
